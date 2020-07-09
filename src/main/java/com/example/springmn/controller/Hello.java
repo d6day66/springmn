@@ -13,7 +13,7 @@ public class Hello {
     HttpServletRequest request;
     @RequestMapping
     public String hello() {
-       return request.getRequestURI();
+       return request.getRequestURL().toString();
 
     }
 }
