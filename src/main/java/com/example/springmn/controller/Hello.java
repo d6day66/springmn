@@ -13,7 +13,8 @@ public class Hello {
     HttpServletRequest request;
     @RequestMapping
     public String hello() {
-       return request.getRequestURL().toString();
+        String str = "你的ip是： ";
+       return str + request.getRequestURL().toString();
 
     }
 }
