@@ -31,7 +31,7 @@ public class Hello {
         simpleDateFormat.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
         String format = simpleDateFormat.format(date);
 
-        String str1 = "欢迎留下你的足迹，你的ip是： ";
+        String str1 = "抓住你了： ";
         String str2 = request.getRemoteAddr();
         String ip = request.getHeader("x-forwarded-for");
         if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
